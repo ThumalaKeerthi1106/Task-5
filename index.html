@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Form</title>
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h2>Contact Us</h2>
+
+  <!-- form id used by JavaScript to find the form -->
+  <form id="contactForm" novalidate>
+    <!-- Name field -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <!-- small element to show error message for name -->
+    <small class="error" id="nameError"></small>
+
+    <!-- Email field -->
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <small class="error" id="emailError"></small>
+
+    <!-- Message field -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+    <small class="error" id="messageError"></small>
+
+    <button type="submit">Submit</button>
+
+    <!-- Success message shown here when form is valid -->
+    <p id="successMessage" class="success"></p>
+  </form>
+
+  <!-- Link to JavaScript file (placed at bottom so HTML loads first) -->
+  <script src="index.js"></script>
+</body>
+</html>
